@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<head>
+<title>check check</title>
+<meta charset="utf-8"/>
+<link rel = "stylesheet" href = "js_css1.css"/>
+<link rel = "stylesheet" href = "calendarStyle.css"/>
+<script src="calendarScript.js"></script>
+<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
+</head>
+    
+<body>
+    <div class="bg">background-img
+            <div class="app-container" ng-app="dateTimeApp" ng-controller="dateTimeCtrl as ctrl" ng-cloak>aa</div>
+           <!-- <div class="datepicker"
+            ng-class="{
+               'am': timeframe == 'am',
+               'pm': timeframe == 'pm',
+               'compact': compact
+           }">-->
+           point1
+           <div class="calendar-grid" ng-class="{false: 'no-hover'}[pickdate]"></div>
+           point2
+            <div class="buttons-container">
+                <div class="cancel-button">CANCEL</div>
+                <div class="save-button">SAVE</div>
+            </div>
+    </div> 
+       
+    <!--src="brooklyn.jpg"/>-->
+</body>
+</html>
