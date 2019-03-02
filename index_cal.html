@@ -1,17 +1,47 @@
 <!DOCTYPE html>
-<head>
-<title>calendar</title>
-<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-<meta charset="utf-8">
-<link rel = "stylesheet" href = "calendarSimple.css"/>
-<script src="calendarSimple.js"></script>
-</head>
-<body>
-        calendar
-        <div id="calendar">
-                <div id="month"></div>
-                <div id="days"></div>
-        </div>
 
+<head>
+    <meta charset="utf-8">
+    <title>calendar</title>
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <link rel="stylesheet" href="calendarSimple.css" />
+    
+</head>
+
+<body>
+
+    calendar
+    <h1>test</h1>
+
+    <div id ="t1"></div>
+    <script>
+            $('#t1').text("jQuery is working");
+        </script>
+    <div id="calendar">
+        <div id="month"></div>
+        <div id="days"></div>
+    </div>
+    <script>
+            var month = {
+                "test" : "calendar",
+                "title": "january",
+                "days": 31
+            };
+    
+            $("#month").text(month.title);
+    
+            for (var x = 1; x <= month.days; x++) {
+                $("<div>" + x + "</div>")
+                    .addClass("day")
+                    .addClass("day-" + x)
+                    .appendTo("#days");
+            }
+
+            $("#day").text("tt");
+
+            $('#days').click(function(x){
+                $("<div>"+x+"</div>").text("O");
+            });
+    </script>
 </body>
 </html>
